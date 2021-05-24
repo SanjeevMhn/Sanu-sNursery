@@ -1,0 +1,36 @@
+.main-content{
+    position: relative;
+    width: 100%;
+    background-color: rgb(245, 245, 177);
+
+}
+.main-content .slide-show{
+    width: 85%;
+    margin: 0 auto;
+    height: 30rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.main-content .my-slide{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.main-content .imges{
+    object-fit: cover;
+    height: 100%;
+    width: 100%; 
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@keyframes fade{
+    from{
+        opacity: .6;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,84 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+}
+.main-header{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(236, 247, 146);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 0.5rem 15px rgba(0, 0, 0, 0.322);
+    z-index: 10;
+    transition: height 200ms ease;
+}
+.main-header .company-logo{
+    height: 100%;
+    width: 20%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: rgb(8, 160, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pattaya', 'arial',sans-serif;
+}
+.main-header .main-nav{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'KoHo', 'arial', sans-serif;
+}
+.main-header .nav-lists{
+    display: flex;
+    width: 70%;
+    height: 45%;
+    list-style: none;
+    justify-content: center;
+}
+.main-header .nav-items{
+    height: 100%;
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.main-header .nav-items:not(:last-child){
+    margin-right: 1rem;
+}
+.main-header .nav-link{
+    font-size: 1.25rem;
+    color: #000;
+    text-decoration: none;
+}
+.active{
+    background-color: rgb(8, 160, 8);
+}
+.return-to-top{
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    color: rgb(236,236,236);
+    background-color: darkmagenta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+}

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background:rgb(139, 214, 68);
+    background:rgba(48, 48, 48, 0.904);
 }
 .contact .store-location,
 .contact .contact-us{
@@ -16,9 +16,9 @@
     justify-content: center;
 }
 
-.contact .store-location{
+/* .contact .store-location{
     border-right: 4px ridge rgb(240, 236, 26);
-}
+} */
 .contact .store-location .header,
 .contact .store-location .address,
 .contact .store-location .business-hours,
@@ -40,6 +40,17 @@
     font-size: 2rem;
     font-family: 'KoHo', 'arial', 'sans-serif';
     color: rgb(33, 148, 33);
+    position: relative;
+}
+.contact .store-location .header::after,
+.contact .contact-us .header::after{
+    content: "";
+    position: absolute;
+    height: 0.15rem;
+    width: 70%;
+    border-radius: 8px;
+    background-color: rgb(33, 148, 33);;
+    bottom: 0;
 }
 .contact .store-location .address,
 .contact .store-location .business-hours,
@@ -50,7 +61,8 @@
     padding: 1rem 0 1rem 0;
     font-size: 1.2rem;
     font-family: 'KoHo', 'arial', 'sans-serif';
-    background-color: rgb(139, 214, 68);
+    /* background: rgba(48, 48, 48, 0.904); */
+
 }
 .contact .store-location .address .header-text,
 .contact .store-location .business-hours .header-text,

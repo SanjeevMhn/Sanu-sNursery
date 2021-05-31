@@ -10,7 +10,7 @@
     width: 45%;
 }
 .services .our-work .title{
-    height: 30%;
+    height: 25%;
     width: 100%;
     font-family: 'Pattaya', 'Arial', 'sans-serif';
     font-size: 2.5rem;
@@ -26,4 +26,26 @@
     font-size: 1.25rem;
     text-align: center;
     padding: 0 2rem 0 2rem;
+}
+.services .work-cards{
+    height: 60%;
+    width: 100%;
+    padding: 2rem;
+}
+.services .work-cards .card-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.services .work-cards .card-wrapper .card{
+    height: 100%;
+    width: 20%;
+    background-color:darkseagreen;
+    transition: all 500ms ease-out;
+}
+.services .work-cards .card-wrapper .card:not(:last-child){
+    margin-right: 1.5rem;
+}
+.services .work-cards .card-wrapper .card:hover{
+    transform: scale(1.15);
 }

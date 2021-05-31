@@ -1,73 +1,49 @@
 .contact{
-    height: 30rem;
+    height: 20rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background:rgba(48, 48, 48, 0.904);
+    color: rgb(236,236,236);
+    padding-top: 2rem;
 }
-.contact .store-location,
-.contact .contact-us{
-    height: 60%;
-    width: 28%;
+.contact .location,
+.contact .contact-details{
+    height: 100%;
+    width: 30%;
+}
+.contact .location h2,
+.contact .contact-details h2{
+    height: 20%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-/* .contact .store-location{
-    border-right: 4px ridge rgb(240, 236, 26);
-} */
-.contact .store-location .header,
-.contact .store-location .address,
-.contact .store-location .business-hours,
-.contact .contact-us .header,
-.contact .contact-us .phone,
-.contact .contact-us .email{
-    display: flex;
     flex-direction: column;
-    align-items: center;   
+    font-size: 2.5rem;
+    font-family: 'Pattaya', 'arial',sans-serif;
 }
-/* .contact .contact-us,
-.contact .store-location{
-    background-color: lightgoldenrodyellow;
-} */
-.contact .store-location .header,
-.contact .contact-us .header{
-    height: 28%;
+.contact .location .address,
+.contact .location .open-close-time,
+.contact .contact-details .ph-numbers{
     width: 100%;
-    font-size: 2rem;
-    font-family: 'KoHo', 'arial', 'sans-serif';
-    color: rgb(33, 148, 33);
-    position: relative;
+    font-family: 'KoHo', 'arial', sans-serif;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.contact .store-location .header::after,
-.contact .contact-us .header::after{
-    content: "";
-    position: absolute;
-    height: 0.15rem;
-    width: 70%;
-    border-radius: 8px;
-    background-color: rgb(33, 148, 33);;
-    bottom: 0;
+.contact .location .address{
+    height: 12%;
 }
-.contact .store-location .address,
-.contact .store-location .business-hours,
-.contact .contact-us .phone,
-.contact .contact-us .email{
-    height: 40%;
-    width: 100%;
-    padding: 1rem 0 1rem 0;
-    font-size: 1.2rem;
-    font-family: 'KoHo', 'arial', 'sans-serif';
-    /* background: rgba(48, 48, 48, 0.904); */
+.contact .location .open-close-time{
+    height: 15%;
+}
 
+.contact .contact-details ph-numbers{
+    height: 16%;
 }
-.contact .store-location .address .header-text,
-.contact .store-location .business-hours .header-text,
-.contact .contact-us .phone .header-text,
-.contact .contact-us .email .header-text{
-    font-weight: bolder;
-}
+
 

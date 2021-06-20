@@ -1,5 +1,5 @@
 .services{
-    height: 40rem;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -48,4 +48,16 @@
 }
 .services .work-cards .card-wrapper .card:hover{
     transform: scale(1.15);
+}
+@media (max-width: 414px){
+    .services{
+        z-index: 100;
+        height: 10rem;
+        width: 100%;
+        background-color: red;
+    }
+    .services .our-work{
+      height: 20%;
+
+    }
 }

@@ -1,55 +1,60 @@
 .about-us{
     width: 100%;
-    height:45rem;
+    height: 68%;
     position: relative;
 }
 .about-us .in-brief{
     width: 100%;
-    height: 40%;
     display: flex;
+    height: 40%;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .about-us .about-title{
-    height: 20%;
+    height: 15%;
     width: 30%;
     color: rgb(8, 160, 8);
     font-family: 'Pattaya', 'arial',sans-serif;
     font-size: 2rem;
     text-align: center;
-    padding-top: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about-us .about-text{
-    height: 90%;
+    height: 75%;
     width: 45%;
     font-family: 'KoHo', 'arial', sans-serif;
     font-size: 1.25rem;
     text-align: center;
-    padding: 0.5rem 0.5rem 0 0.5rem;
+    line-height: 1.65rem;
+    padding: 0 0.5rem;
 }
 .about-us .pictorial-represent{
-    height: 60%;
+    height: 58%;
     width: 100%;
     background:rgb(33, 148, 33);
     color: rgb(236,236,236);
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
 }
 .about-us .container{
     display: flex;
     align-items: center;
-    padding: 0 2rem 0 7rem;
+    padding-left: 6rem;
+    height: 25%;
 }
 .about-us .container:nth-child(2){
     background:rgb(25, 131, 25);
 }
-.about-us .container:nth-child(3){
+.about-us .container:nth-child(4){
     background:rgb(25, 131, 25);
 }
 .about-us .icon{
-    font-size: 2.5rem;
-    height: 6rem;
-    width: 6rem;
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
     border: 3px solid rgb(236,236,236);
     display: flex;
     border-radius: 50%;
@@ -61,6 +66,7 @@
     width: 85%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 0 8rem 0 2rem;
     overflow: hidden;
 }
@@ -70,10 +76,84 @@
 }
 .about-us .details .text-body{
     font-family: 'KoHo', 'Arial', 'sans-serif';
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.15rem;
 
 }
+@media(max-width: 414px){
+    .about-us{
+        height: 69%;
+        width: 100%;
+    }
+    .about-us .in-brief{
+        height: 62%;
+        font-size: 1.05rem;
+    }
+    .about-us .about-title{
+        height: 18%;
+        width: 100%;
+        font-size: 1.85rem;
+    }
+    .about-us .about-text{
+        width: 97%;
+        height: 100%;
+        font-size: 1.18rem;
+        line-height: 1.25rem;
+    }
 
+    .about-us .pictorial-represent{
+        height: 75%;
+        width: 100%;
+        background:rgb(33, 148, 33);
+        color: rgb(236,236,236);
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us .container{
+        display: flex;
+        align-items: center;
+        padding-left: 1.5rem;
+    }
+     .about-us .icon{
+        font-size: 2rem;
+        height: 4rem;
+        width: 4rem;
+        border: 3px solid rgb(236,236,236);
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-us .details{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .about-us .details .header-text{
+        font-family: 'Pattaya','Arial','sans-serif';
+        font-size: 1.35rem;
+        text-align: center;
+    }
+    .about-us .details .text-body{
+        font-family: 'KoHo', 'Arial', 'sans-serif';
+        font-size: 1rem;
+        background-color: blueviolet;
+        line-height: 1.15rem;
+        width: 100%;
+        margin-left: 2rem;
+        display: none;
+    }
 
-
+    .about-us .container:nth-child(2){
+        background:rgb(25, 131, 25);
+    }
+    .about-us .container:nth-child(1){
+        background:rgb(33, 148, 33);
+    }
+    .about-us .container:nth-child(3){
+        background:rgb(33, 148, 33);
+    }
+    .about-us .container:nth-child(4){
+        background:rgb(25, 131, 25);
+    }
+}
